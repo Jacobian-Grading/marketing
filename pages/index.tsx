@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         </section>
         <section className={styles.midSection} id="product">
           <div className={styles.midBody}>
-            We've run math competitions before. Some parts were fun, and some parts were not-so-fun. We grew tired of this, so we started AutoComp, the easy, fast, and reliable platform to run online contests. Join us in shaping the future of online competitions.
+            We&apos;ve run math competitions before. Some parts were fun, and some parts were not-so-fun. We grew tired of this, so we started AutoComp, the easy, fast, and reliable platform to run online contests. Join us in shaping the future of online competitions.
           </div>
         </section>
         <section className={styles.featureOdd} id="features">
@@ -57,12 +57,12 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.featureImage}>
-            <Image src={testsImg}/>
+            <Image src={testsImg} alt="image of test making dashboard"/>
           </div>
         </section>
         <section className={styles.featureEven}>
           <div className={styles.featureImage}>
-            <Image src={gradingImg}/>
+            <Image src={gradingImg} alt="image of grading dashboard"/>
           </div>
           <div className={styles.featureText}>
             <div className={styles.featureSupertitle}>Spreadsheets begone</div>
@@ -85,12 +85,12 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.featureImage}>
-            <Image src={endImg}/>
+            <Image src={endImg} alt="image of organizer pipeline"/>
           </div>
         </section>
         <section className={styles.featureEven}>
           <div className={styles.featureImage}>
-            <Image src={competitorImg}/>
+            <Image src={competitorImg} alt="image of competitor page"/>
           </div>
           <div className={styles.featureText}>
             <div className={styles.featureSupertitle}>
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
         </section>
         <section className={styles.midSection} id="contact">
           <div className={styles.midBody}>
-            Have a feature you want in the final product? Interested in getting involved or using AutoComp? Or just excited about pioneering the future of online competitions? We'd love to hear more from you at <a className={styles.contactLink} href="mailto:autocomp@mit.edu">autocomp@mit.edu</a>.
+            Have a feature you want in the final product? Interested in getting involved or using AutoComp? Or just excited about pioneering the future of online competitions? We&apos;d love to hear more from you at <a className={styles.contactLink} href="mailto:autocomp@mit.edu">autocomp@mit.edu</a>.
           </div>
         </section>
       </Layout>
