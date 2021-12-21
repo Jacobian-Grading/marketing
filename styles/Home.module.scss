@@ -134,6 +134,13 @@
   width: 500px;
 }
 
+@media (max-width: theme.$breakpoint-1) {  
+  .featureImageImg{
+    position: relative;
+    width: 100%;
+  }
+}
+
 // contact
 .contactLink {
   color: theme.$primary
