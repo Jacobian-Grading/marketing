@@ -1,0 +1,40 @@
+@use "theme";
+
+// Layout styles
+
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Footer
+.footer {
+  flex-shrink: 0;
+}
+
+.footerMenu {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footerLink {
+  padding: 5px 20px;
+}
+
+@media (max-width: theme.$breakpoint-1) {  
+  .footerMenu {
+    flex-direction: column;
+  }
+}

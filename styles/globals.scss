@@ -1,0 +1,33 @@
+@use "theme";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;800;900&display=swap");
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: theme.$font-stack;
+  color: theme.$primary-contrast;
+  background: theme.$white;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+button {
+  font-family: theme.$font-stack;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+input {
+  font-family: theme.$font-stack;
+}
+
+* {
+  box-sizing: border-box;
+}

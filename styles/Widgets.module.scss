@@ -1,0 +1,36 @@
+@use "theme";
+
+// Button
+
+%button {
+  border-width: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12pt;
+}
+
+%button:hover, %button:active {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.buttonPrimary {
+  @extend %button;
+  background: theme.$primary;
+  color: theme.$primary-contrast;
+}
+
+.buttonSecondary {
+  @extend %button;
+  background: theme.$secondary;
+  color: theme.$secondary-contrast;
+}
+
+// Short Input
+
+.shortInput {
+  font-size: 1.1em;
+  padding: 8px;
+  border-radius: 5px;
+  border-width: 1px;
+}

@@ -1,0 +1,100 @@
+@use "theme";
+
+// Top box
+
+.topSection {
+  max-width: 900px;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.topFirstLine {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.topSecondLine {
+  font-weight: 800;
+  font-variant: petite-caps;
+  font-size: 48px;
+  text-align: center;
+  padding: 10px;
+}
+
+.topBody {
+  font-weight: 300;
+  font-size: 18pt;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 690px;
+  padding:  0 10px;
+}
+
+.topButtonGroup {
+  display: flex;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.buttonText {
+  font-size: 20pt;
+  padding: 5px;
+}
+
+// Feature
+
+%feature {
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.featureEven {
+  @extend %feature;
+}
+
+.featureOdd {
+  @extend %feature;
+}
+
+@media (max-width: theme.$breakpoint-1) {  
+  .featureEven {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.featureText {
+  max-width: 400px;
+  padding: 30px;
+}
+
+.featureSupertitle {
+  font-weight: 800;
+  font-size: 14pt;
+  font-variant: small-caps;
+}
+
+.featureTitle {
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+.featureBody {
+  font-weight: 300;
+}
+
+.featureImage {
+  width: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 10px gray;
+}
