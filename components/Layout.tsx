@@ -1,7 +1,6 @@
-import {useState} from "react";
+import { useState, useEffect, useRef, createRef } from "react";
 
 import styles from "../styles/Layout.module.scss";
-import Link from "next/link";
 import Navbar from "../components/Navbar"
 
 const Footer = () => {
@@ -20,10 +19,28 @@ interface LayoutProps {
 }
 
 const Layout = (props: LayoutProps) => {
+  const [sidebar, setSidebar] = useState(false);
+
+  const handleClickOutside = (event: any) => {
+    console.log(ref.current)
+    if (ref.current && event.target! && !ref.current.contains(event.target)) {
+      setSidebar(false);
+    }
+  };
+
+  const ref : React.RefObject<HTMLInputElement> = createRef();
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside, true);
+    return () => {
+      document.removeEventListener('click', handleClickOutside, true);
+    };
+  });
+
   return (
     <div className={styles.layout}>
-      <div className={styles.navWrapper}>
-        <Navbar isAuth={props.isAuth} />
+      <div className={styles.navWrapper} id="navbar-container" ref={ref}>
+        <Navbar isAuth={props.isAuth} sidebar={sidebar} setSidebar={setSidebar}/>
       </div>
       <main className={styles.main}>{props.children}</main>
       <Footer />

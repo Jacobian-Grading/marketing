@@ -83,7 +83,8 @@
     background: theme.$primary;
     gap: 20px;
     border-left-style: solid;
-    border-left-width: 2;
+    border-left-width: 1px;
+    border-color: theme.$primary-contrast;
     z-index: 1000;
   }
 
@@ -98,5 +99,12 @@
 
   .mobileHamburger {
     display: block;
+  }
+
+  .nav {
+    position: fixed;
+    z-index:4;
+    background-color: theme.$primary;
+    width: 100%;
   }
 }

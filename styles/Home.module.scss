@@ -4,7 +4,7 @@
 
 .topSection {
   max-width: 900px;
-  padding: 50px 20px;
+  padding: 50px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,6 +44,37 @@
 .buttonText {
   font-size: 20pt;
   padding: 5px;
+}
+
+@media (max-width: theme.$breakpoint-1) { 
+  .topSection {
+    max-width: 900px;
+    padding: 70px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  } 
+}
+
+// Mid box
+
+.midSection {
+  max-width: 900px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.midBody {
+  font-weight: 300;
+  font-size: 14pt;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 690px;
+  padding:  0 10px;
 }
 
 // Feature
@@ -97,4 +128,9 @@
   padding: 10px;
   background-color: white;
   box-shadow: 2px 2px 10px gray;
+}
+
+// contact
+.contactLink {
+  color: theme.$primary
 }

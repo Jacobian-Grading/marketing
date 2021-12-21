@@ -1,22 +1,26 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
 
 interface NavbarProps {
   isAuth: boolean;
+  sidebar: boolean;
+  setSidebar: any;
 }
 
 const Navbar = (props: NavbarProps) => {
-  const [sidebar, setSidebar] = useState(false);
 
   return (
     <nav className={styles.nav}>
       <Link href="/">
         <a className={styles.logo}>AutoComp</a>
       </Link>
-      <div className={!sidebar ? styles.navMenu : styles.mobileNavMenu}>
-        <div className={styles.exitButton} onClick={() => setSidebar(false)}> X</div>
+      <div className={!props.sidebar ? styles.navMenu : styles.mobileNavMenu}>
+        <div className={styles.exitButton} onClick={() => props.setSidebar(false)}> X</div>
+        <Link href="#product">
+          <a className={styles.navItem}>Product</a>
+        </Link>
         <Link href="#features">
           <a className={styles.navItem}>Features</a>
         </Link>
@@ -27,10 +31,10 @@ const Navbar = (props: NavbarProps) => {
           <a className={styles.navItemEmph}>Join Waitlist</a>
         </Link>
       </div>
-      {!sidebar && (
+      {!props.sidebar && (
         <div
           className={styles.mobileHamburger}
-          onClick={() => setSidebar(true)}
+          onClick={() => props.setSidebar(true)}
         >
           <div className={styles.hamburgerBar} />
           <div className={styles.hamburgerBar} />

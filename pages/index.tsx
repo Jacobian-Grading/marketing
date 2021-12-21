@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <div className={styles.topFirstLine}> Online Math Competitions</div>
           <div className={styles.topSecondLine}> Simplified</div>
           <div className={styles.topBody}>
-            The platform to reliably run your entire tournament without the
+            The platform to run your entire tournament without the
             hassle, from registration to awards.
           </div>
           <div className={styles.topButtonGroup}>
@@ -38,6 +38,11 @@ const Home: NextPage = () => {
                 </Button>
               </a>
             </Link>
+          </div>
+        </section>
+        <section className={styles.midSection} id="product">
+          <div className={styles.midBody}>
+            We've run math competitions before. Some parts were fun, and some parts were not-so-fun. We grew tired of this, so we started AutoComp, the easy, fast, and reliable platform to run online contests. Join us in shaping the future of online competitions.
           </div>
         </section>
         <section className={styles.featureOdd} id="features">
@@ -98,10 +103,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <section id="contact">
-          <p>
-            
-          </p>
+        <section className={styles.midSection} id="contact">
+          <div className={styles.midBody}>
+            Have a feature you want in the final product? Interested in getting involved or using AutoComp? Or just excited about pioneering the future of online competitions? We'd love to hear more from you at <a className={styles.contactLink} href="mailto:autocomp@mit.edu">autocomp@mit.edu</a>.
+          </div>
         </section>
       </Layout>
     </>
