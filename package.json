@@ -5,11 +5,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "formik": "^2.2.9",
-    "next": "12.0.7",
+    "imagemin-optipng": "^8.0.0",
+    "next": "^12.0.7",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "^1.45.0"
