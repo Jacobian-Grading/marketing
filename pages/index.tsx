@@ -57,12 +57,12 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.featureImage}>
-            <img src={"../img/tests.png"} alt="image of test making dashboard"/>
+            <img className={styles.featureImageImg} src={"../img/tests.png"} alt="image of test making dashboard"/>
           </div>
         </section>
         <section className={styles.featureEven}>
           <div className={styles.featureImage}>
-            <img src={"../img/grading.png"} alt="image of grading dashboard"/>
+            <img className={styles.featureImageImg} src={"../img/grading.png"} alt="image of grading dashboard"/>
           </div>
           <div className={styles.featureText}>
             <div className={styles.featureSupertitle}>Spreadsheets begone</div>
@@ -85,12 +85,12 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.featureImage}>
-            <img src={"../img/end.png"} alt="image of organizer pipeline"/>
+            <img className={styles.featureImageImg} src={"../img/end.png"} alt="image of organizer pipeline"/>
           </div>
         </section>
         <section className={styles.featureEven}>
           <div className={styles.featureImage}>
-            <img src={"../img/competitor.png"} alt="image of competitor page"/>
+            <img className={styles.featureImageImg} src={"../img/competitor.png"} alt="image of competitor page"/>
           </div>
           <div className={styles.featureText}>
             <div className={styles.featureSupertitle}>
